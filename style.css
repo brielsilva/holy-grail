@@ -1,0 +1,138 @@
+body {
+  background: hsl(0, 1%, 85%);
+  padding: 0 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(0, 1%, 45%);
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.footer ul.social-link li {
+  font-family: "Font Awesome";
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-links li a:before {
+  font-family: "Fontawesome";
+  -webkit-font-smoothing: antialiased;
+  padding-right: 0.5rem;
+}
+
+.social-links li a[href*="twitter.com"]::before {
+  content: "\f099";
+}
+
+.social-links li a[href*="linkedin.com"]::before {
+  content: "\f08c";
+}
+
+.social-links li a[href*="facebook.com"]::before {
+  content: "\f09a";
+}
+
+.social-links li a[href*="instagram.com"]::before {
+  content: "\f16d";
+}
+
+header h1 {
+  text-align: start;
+  font-size: 3rem;
+}
+
+.main-menu {
+  background: hsl(0, 1%, 65%);
+}
+
+.main-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1rem;
+}
+
+.main-menu ul li a:hover {
+  background: hsl(0, 1%, 78%);
+}
+
+article {
+  padding: 0 1rem;
+}
+
+aside {
+  background: hsl(0, 1%, 70%);
+  padding: 1rem 1rem;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 30rem) {
+  header h1 {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+  }
+
+  aside {
+    flex: 0 0 12rem;
+  }
+  .content {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  article {
+    flex: 1 1 auto;
+    font-size: 1.2rem;
+  }
+
+  .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-menu ul li {
+    flex: 1 0 auto;
+  }
+
+  aside ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside ul li {
+    flex: 1 0 auto;
+  }
+}
